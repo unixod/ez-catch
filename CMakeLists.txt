@@ -2,7 +2,7 @@
 # Note: this file isn't for direct use, it is meant for making this repository
 # be fetchable by means of FetchContent CMake functionality.
 #
-
+project(ez-catch LANGUAGES NONE)
 include(FetchContent)
 
 ###########################################
@@ -42,4 +42,4 @@ endif()
 
 target_link_libraries(ez_catch
     INTERFACE
-    Catch2WithMain)
+    Catch2::Catch2WithMain)
