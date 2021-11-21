@@ -9,7 +9,7 @@ include(FetchContent)
 # Fetch dependencies
 ###########################################
 FetchContent_Declare(Catch2
-    GIT_REPOSITORY
+    GIT_REPOSITORY git@github.com:unixod/Catch2.git
     GIT_TAG devel
     GIT_SHALLOW On
 )
