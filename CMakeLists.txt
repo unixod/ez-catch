@@ -9,8 +9,8 @@ include(FetchContent)
 # Fetch dependencies
 ###########################################
 FetchContent_Declare(Catch2
-    GIT_REPOSITORY git@github.com:unixod/Catch2.git
-    GIT_TAG e140ebc142836fbda199d80a6593a126e6d29a2f # branch: fix-warnings (hash is used to prevent fetching each time cmake is run)
+    GIT_REPOSITORY
+    GIT_TAG devel
     GIT_SHALLOW On
 )
 
