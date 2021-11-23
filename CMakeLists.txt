@@ -10,7 +10,7 @@ include(FetchContent)
 ###########################################
 FetchContent_Declare(Catch2
     GIT_REPOSITORY git@github.com:unixod/Catch2.git
-    GIT_TAG devel
+    GIT_TAG fix-warnings
     GIT_SHALLOW On
 )
 
