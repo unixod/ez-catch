@@ -10,23 +10,23 @@ include(FetchContent)
 ###########################################
 FetchContent_Declare(Catch2
     GIT_REPOSITORY https://github.com/unixod/Catch2.git
-    GIT_TAG v3.2.1
+    GIT_TAG v3.8.0
     GIT_SHALLOW On
 )
 
-FetchContent_Declare(unixod-cmake-modules
+FetchContent_Declare(ez-cmake-modules
     GIT_REPOSITORY https://github.com/unixod/cmake-modules.git
-    GIT_TAG cf11eb12630ccce9fcab08ce360d34a9e4606c3f
+    GIT_TAG v1.0
     GIT_SHALLOW On
 )
 
 FetchContent_MakeAvailable(
     Catch2
-    unixod-cmake-modules
+    ez-cmake-modules
 )
 
 ###########################################
-# Add ez::catch2
+# Add ez::catch
 ###########################################
 add_library(ez_catch INTERFACE)
 add_library(ez::catch ALIAS ez_catch)
